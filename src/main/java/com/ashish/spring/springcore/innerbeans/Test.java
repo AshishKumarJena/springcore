@@ -11,6 +11,11 @@ public class Test {
 
 		Employee employee = (Employee) context.getBean("employee");
 		System.out.println(employee);
+		System.out.println(employee.hashCode());
+		
+		Employee employee2 = (Employee) context.getBean("employee");
+		System.out.println(employee2);
+		System.out.println(employee2.hashCode());
 
 	}
 
